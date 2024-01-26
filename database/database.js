@@ -13,6 +13,6 @@ const pool = mysql.createPool({
     multipleStatements: true,
 }).promise()
 
-//Seed database first time
-//const [result] = await pool.query(seedQuery)
+//Seed database first time, comment line below after seeding
+const [result] = await pool.query(seedQuery)
 export default pool 

@@ -1,6 +1,6 @@
 # Payment Integration Proof of Concept (Express)
 
-This project is a Payment Integration Proof of Concept implemented with Express.jsy.
+This project is a Payment Integration Proof of Concept implemented with Express.js.
 
 ## Getting Started
 
@@ -11,26 +11,7 @@ Ensure you have the following installed:
 - npm (Node Package Manager)
 - MYSQL database
 
-## Install dependencies
-
-npm install
-
-### Set up Environment
-
-Create a # Payment Integration Proof of Concept (Express)
-
-This project is a Payment Integration Proof of Concept implemented with Express.jsy.
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed:
-- Node.js
-- npm (Node Package Manager)
-- MYSQL database
-
-## Install dependencies
+### Install dependencies
 
 npm install
 
@@ -59,32 +40,18 @@ MOLLIE_API: The base URL for the Mollie API./
 MOLLIE_API_KEY: The API key for authenticating requests to the Mollie API.
 Authentication Token Secret:
 
+### Database
 
+a database seeding script that will execute on first run is included, disable seeding in database/database.js after first run.
 
-### Run project
+Two users are created:
 
-node server file in the project root
+Name: John, Password: Password1
 
-MySQL Configuration:
+Name: Jack, Password: Paswoord123
 
-MYSQL_HOST: The MySQL database host address.
-MYSQL_USER: The MySQL database username for authentication.
-MYSQL_PASSWORD: The password associated with the MySQL database user.
-MYSQL_DATABASE: The name of the MySQL database to be used.
+use these to login
 
-Mollie API Configuration:
-
-MOLLIE_API: The base URL for the Mollie API.
-MOLLIE_API_KEY: The API key for authenticating requests to the Mollie API.
-Authentication Token Secret:
-
-TOKEN_SECRET: A secret key used for signing and verifying authentication tokens.
-Frontend Configuration:
-
-FRONTEND_URL: The URL where the frontend application is hosted.
-Ngrok Proxy Configuration:
-
-BACKEND_NGROK_PROXY: The proxy URL used for routing requests to the backend during development (e.g., when using Ngrok).
 
 ### Run project
 
