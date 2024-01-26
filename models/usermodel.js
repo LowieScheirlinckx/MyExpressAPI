@@ -1,15 +1,5 @@
 import poolPromise from '../Database/database.js'
 
-// const create = async (user) => {
-//     const pool = await poolPromise;
-//     console.log(user)
-//     const [results, fields] = await pool
-//         .query(`INSERT INTO user (name)
-//                 VALUES ('${user.name}')`)
-//         console.log(results," - split - ", fields)
-//     return results.affectedRows;
-// }
-
 const get = async (username) => {
     const pool = await poolPromise;
     const rs = await pool

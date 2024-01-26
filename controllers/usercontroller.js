@@ -22,15 +22,15 @@ const create = async(req, res) => {
 }
 
 const login = async(req, res) => {
-    console.log(req)
+    
     const {username, password} = req.body
+
     const person = await user.get(username)
     if (person == null) {
         res.status(500).send({message: 'Gebruiker bestaat niet.'})
       } else {
         const isMatch = await bcrypt.compare(password, person.password)
         if(isMatch){
-            console.log('IDIDIDID', person.id)
             const token = generateAccessToken(person.id)
             res.status(200).send({token: token})
         }else{
