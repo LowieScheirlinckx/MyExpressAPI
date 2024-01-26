@@ -23,7 +23,8 @@ Create a `.env` file in the project root
 Frontend Configuration:
 
 `FRONTEND_URL:` The URL where the frontend application is hosted.
-Ngrok Proxy Configuration:
+
+Ngrok Proxy Configuration
 
 `BACKEND_NGROK_PROXY:` The proxy URL used for routing requests to the backend during development (e.g., when using Ngrok).
 
@@ -36,7 +37,7 @@ MySQL Configuration
 
 Mollie API Configuration
 
-`MOLLIE_API:` The base URL for the Mollie API./
+`MOLLIE_API:` The base URL for the Mollie API.
 `MOLLIE_API_KEY:` The API key for authenticating requests to the Mollie API.
 
 ### Database
